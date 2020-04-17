@@ -11,13 +11,12 @@ interface ICountryPickerProps {
 
 const CountryPicker : React.FC<ICountryPickerProps> = ({ handleCountryChange }) => {
 
-    const [countries, setCountries] = useState([]);
+    const [countries, setCountries] = useState< string[] >([]);
 
     useEffect(() => {
         const fetchAPI = async () => {
-            const data = await fetchCountries();
-            console.log(data);
-            setCountries(data);
+            const fetchedCountries : string[] = await fetchCountries();
+            setCountries(fetchedCountries);
         }
         fetchAPI();
         

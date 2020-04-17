@@ -11,18 +11,15 @@ const App = () => {
     const [country, setCountry] = useState< string >();
 
     const handleCountryChange = async(country : string) => {
-
         setCountry(country);
         const data : IData = await fetchData(country);
         setData(data);
-        console.log("Country" + country);
     }
 
     useEffect(() => {
         const fetchAll = async () => {
             const data : IData = await fetchData("");
             setData(data);
-            console.log(data.deaths.value);
         }
         fetchAll();
     }, []);
