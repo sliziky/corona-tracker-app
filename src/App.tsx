@@ -18,7 +18,7 @@ const App = () => {
 
     return (
         <div className={styles.container}>
-            <Cards/>
+            <Cards data={data}/>
             <CountryPicker/>
             <Chart/>
         </div>
