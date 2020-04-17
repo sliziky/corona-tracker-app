@@ -1,3 +1,6 @@
+SPA written in Typescript/React with the help of https://www.youtube.com/watch?v=khJlrj3Y6Ls&t=1556s 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
